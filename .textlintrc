@@ -1,0 +1,17 @@
+{
+  "rules": {
+    "@textlint-ja/no-synonyms": true,
+    "ja-hiragana-fukushi": true,
+    "ja-hiragana-hojodoushi": true,
+    "ja-hiragana-keishikimeishi": true,
+    "ja-no-weak-phrase": true,
+    "ja-unnatural-alphabet": true,
+    "no-double-negative-ja": true,
+    "no-dropping-the-ra": true,
+    "no-mix-dearu-desumasu": true,
+    "no-mixed-zenkaku-and-hankaku-alphabet": {
+      "prefer": "半角"
+    },
+    "prefer-tari-tari": true
+  }
+}

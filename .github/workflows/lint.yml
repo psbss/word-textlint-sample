@@ -1,0 +1,21 @@
+name: Textlint workflow
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  textlint:
+    name: textlint
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'npm'
+      - name: npm install
+        run: npm ci
+      - name: test
+        run: npx textlint *.md
